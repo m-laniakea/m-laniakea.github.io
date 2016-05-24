@@ -1,3 +1,8 @@
+# Self-Similar Spheres
+
+Built using the threejs editor, with thanks to mrdoob.
+See it in action [here](https://m-laniakea.github.io/3D_5/index.html).
+
 The goal here was to develop a procudure that can develop a beautiful, complex scene
 using simple rules. This meant going with self-similar geometry.
 
@@ -5,7 +10,7 @@ Inspired by the demo Heaven 7 by Exceed (https://www.youtube.com/watch?v=rNqpD3M
 That demo was written about 16 years ago, is 64kb or fewer in size, and is written in assembly without OpenGL. 
 
 I wanted to create something similar to the structure scene at 1:40. 
-The demo creates a sphere, then adds smaller ones touching its surface at all 6 faces of a bounding box,
+This demo creates a sphere, then adds smaller ones touching its surface at all 6 faces of a bounding box,
 and does the same for those; in total 3 levels of heirarchy.
 
 That's what was started with, and the parameters were modified until I was satisfied with the results. 
