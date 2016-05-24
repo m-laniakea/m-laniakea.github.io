@@ -1,0 +1,163 @@
+{
+	"metadata": {
+		"type": "App"
+	},
+	"project": {
+		"gammaInput": false,
+		"gammaOutput": false,
+		"shadows": true,
+		"vr": false
+	},
+	"camera": {
+		"metadata": {
+			"version": 4.4,
+			"type": "Object",
+			"generator": "Object3D.toJSON"
+		},
+		"object": {
+			"uuid": "0C00CA1F-5301-4B9C-A858-B40791A8583B",
+			"type": "PerspectiveCamera",
+			"name": "Camera",
+			"matrix": [0.999991,0,0.00417,0,-0.000001,1,0.000163,0,-0.00417,-0.000163,0.999991,0,-0.038068,-0.001489,9.129725,1],
+			"fov": 50,
+			"zoom": 1,
+			"near": 0.1,
+			"far": 10000,
+			"focus": 10,
+			"aspect": 1.779528,
+			"filmGauge": 35,
+			"filmOffset": 0
+		}
+	},
+	"scene": {
+		"metadata": {
+			"version": 4.4,
+			"type": "Object",
+			"generator": "Object3D.toJSON"
+		},
+		"geometries": [
+			{
+				"uuid": "18257F77-35FC-4BED-8FAD-1A294A49B754",
+				"type": "IcosahedronGeometry",
+				"radius": 40,
+				"detail": 2
+			},
+			{
+				"uuid": "C9533E98-95C5-481B-953B-B6CF93F7C8F0",
+				"type": "IcosahedronGeometry",
+				"radius": 4,
+				"detail": 3
+			}],
+		"materials": [
+			{
+				"uuid": "1087A528-530D-43B5-882A-E4C1494D264F",
+				"type": "MeshStandardMaterial",
+				"color": 4276545,
+				"roughness": 0.5,
+				"metalness": 0.5,
+				"emissive": 0,
+				"side": 1,
+				"depthFunc": 3,
+				"depthTest": true,
+				"depthWrite": true,
+				"skinning": false,
+				"morphTargets": false
+			},
+			{
+				"uuid": "C6CD65E8-3DA1-4415-AB41-5A304FACDA4A",
+				"type": "MeshStandardMaterial",
+				"color": 16777215,
+				"roughness": 0,
+				"metalness": 1,
+				"emissive": 0,
+				"emissiveMap": "41C2014A-77D8-475B-8569-8D3DF95DA6B5",
+				"depthFunc": 3,
+				"depthTest": true,
+				"depthWrite": true,
+				"skinning": false,
+				"morphTargets": false
+			}],
+		"textures": [
+			{
+				"uuid": "41C2014A-77D8-475B-8569-8D3DF95DA6B5",
+				"name": "",
+				"mapping": 300,
+				"repeat": [1,1],
+				"offset": [0,0],
+				"wrap": [1001,1001],
+				"minFilter": 1008,
+				"magFilter": 1006,
+				"anisotropy": 1,
+				"flipY": true,
+				"image": "380A413E-7F1C-4E69-89F2-33FFE934C1E9"
+			}],
+		"images": [
+			{
+				"uuid": "380A413E-7F1C-4E69-89F2-33FFE934C1E9",
+				"url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAAdklEQVRIS2NkYGD4zzCAgHHQOKC+vh4cDo2NjWCaEP//f0jAMTKC/EBYPbp5cP2wECBkIU4DRqwD0NMtqSEI0w9PhOQaADOIXP1k5wL0REhqTsZIhGQbAE2EZOsnNxcMvzRAaiIaLYioHgKkpmJqqSe7HKCWAwBCPPPpBBqr9AAAAABJRU5ErkJggg=="
+			}],
+		"object": {
+			"uuid": "E7D9238C-8DC2-43BF-898D-6F4589A0B7EA",
+			"type": "Scene",
+			"name": "Scene",
+			"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+			"children": [
+				{
+					"uuid": "53D0F08F-D34F-4D8A-8E5D-D2DDE771B840",
+					"type": "Mesh",
+					"name": "BackgroundSphere",
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+					"geometry": "18257F77-35FC-4BED-8FAD-1A294A49B754",
+					"material": "1087A528-530D-43B5-882A-E4C1494D264F"
+				},
+				{
+					"uuid": "0007CED1-EF21-4AF1-B360-E4DC1C9B47AA",
+					"type": "Mesh",
+					"name": "Sphere",
+					"castShadow": true,
+					"receiveShadow": true,
+					"matrix": [0.45,0,0,0,0,0.45,0,0,0,0,0.45,0,0,0,0,1],
+					"geometry": "C9533E98-95C5-481B-953B-B6CF93F7C8F0",
+					"material": "C6CD65E8-3DA1-4415-AB41-5A304FACDA4A"
+				},
+				{
+					"uuid": "88ADD4BA-37F7-477B-9A09-33846DD454E7",
+					"type": "AmbientLight",
+					"name": "AmbientLight",
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+					"color": 2236962,
+					"intensity": 3
+				},
+				{
+					"uuid": "6FAA7AA1-DE1F-4DF9-BD91-1803B219035C",
+					"type": "DirectionalLight",
+					"name": "DirectionalLight",
+					"castShadow": true,
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,5,10,7.5,1],
+					"color": 16775902,
+					"intensity": 1,
+					"shadow": {
+						"camera": {
+							"uuid": "E43B1462-1E97-46F6-90F0-B3E0DA5632AF",
+							"type": "OrthographicCamera",
+							"zoom": 1,
+							"left": -5,
+							"right": 5,
+							"top": 5,
+							"bottom": -5,
+							"near": 0.5,
+							"far": 500
+						}
+					}
+				}],
+			"background": 11184810
+		}
+	},
+	"scripts": {
+		"E7D9238C-8DC2-43BF-898D-6F4589A0B7EA": [
+			{
+				"name": "",
+				"source": "const MAX_RECURSION = 5;\n\nvar sphere = scene.getObjectByName('Sphere');\nsphere.material.emissiveMap.magFilter = THREE.NearestFilter;\n\nvar mother = sphere.clone();\nscene.add(mother);\n\nfunction generate(parent, level)\n// Recursively generate the sphere systems\n{\n\tif (0 == level)\n\t\treturn;\n\n\tfor (var i = 0; i < 2; i++) \n\t{\n\t\tvar child = sphere.clone();\n\t\tchild.material = sphere.material.clone();\n\t\tchild.position.x = -0.5 + i;\n\t\tchild.position.y = -0.5 + i;\n\t\tchild.position.z = -0.5 + i;\n\t\t\n\t\tchild.position.normalize();\n\t\tchild.position.multiplyScalar(parent.geometry.parameters.radius * 3);\n\t\tparent.add(child);\n\n\t\tgenerate(child, level - 1);\n\t}\n\n}\n\ngenerate(mother, MAX_RECURSION);\n\nsphere.visible = false;\n\nfunction recursiveUpdate(parent, time)\n// Recursively update all children of parent\n{\n\tfor (var i = 0; i < parent.children.length; i++)\n\t{\n\t\tvar child = parent.children[i];\n\t\t\n\t\t// Slowly rotate about y-axis\n\t\tchild.rotation.y = time;\n\t\t// Control emission of red & blue light\n\t\tchild.material.emissive.r = Math.max(0, Math.cos(child.parent.material.emissive.r * Math.PI )) * Math.abs(Math.sin(child.rotation.y));\n\t\tchild.material.emissive.b = Math.max(0, Math.cos(child.rotation.y));\n\t\t// Recursively update all children of child\n\t\trecursiveUpdate(child, time);\n\t}\n}\n\nfunction updateCamera()\n// Make camera travel in a 2:1 elliptical pattern around the mother sphere\n{\n\tcamera.position.x = Math.cos( mouseDelta ) * 16;\n\tcamera.position.z = Math.sin( mouseDelta ) * 8;\n\tcamera.lookAt(scene.position);\n}\n\nvar mouseDelta = 0;\nvar controlCamera = false;\n\nupdateCamera();\n\nfunction mousemove(event)\n// Rotate camera\n// Increase speed the further away from center\n{\n\tif (!controlCamera)\n\t\treturn;\n\t\n\tmouseDelta += (event.clientX / player.width - 0.5) / 10;\n\tupdateCamera();\n}\n\n// Toggle manual camera control by clicking mouse\nfunction mousedown(event) { controlCamera = !controlCamera; }\n\t\nfunction update(event) \n// Update function: Called continously\n{\n\t// Move camera in elliptical pattern\n\tmouseDelta += event.time * 1e-9;\n\tupdateCamera();\n\t\n\t// Slowly rotate about y-axis\n\tmother.rotation.y = event.time * 0.0001;\n\t// Master control for red/blue light emission\n\tmother.material.emissive.r = Math.max(0, Math.sin(event.time * 0.0004)) * Math.abs(Math.sin(mother.rotation.y)) ; \n\tmother.material.emissive.b = Math.max(0, Math.cos(mother.rotation.y) * 0.5);\n\t\n\t// Recursively update systems in 1:2 time ratio\n\trecursiveUpdate(mother, event.time * 0.0002);\n\n}"
+			}]
+	}
+}
